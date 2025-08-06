@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo yum update -y
+
+#apache
+sudo yum install -y httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+#website
+echo "<html><body><h1>My First Heading from web-1 </h1><p>My first paragraph.</p></body></html>" > /var/www/html/index.html
