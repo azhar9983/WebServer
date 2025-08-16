@@ -1,0 +1,12 @@
+#ftpserver
+python -m pyftpdlib 
+#start default server 
+
+
+python -m pyftpdlib -x -p 4566 -u user123 -P abcd1234 
+#basic ftp server with user login and without encryption
+
+# -d for directory changes 
+# -h for help
+# -i for interface address 
+
